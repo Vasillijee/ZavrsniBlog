@@ -36,6 +36,7 @@
                     @csrf
                       <input type="submit" value="Delete">
                   </form>
+                  @endif
                   @endauth
                     <img src="{{asset($post->picture)}}" alt="">
                     <a href="{{route('blog.show')}}">
@@ -48,14 +49,14 @@
                         {{$post->published_at->diffForHumans}}
                     </p>
                 </div>
+                @endforeach
          </div>
     </div>
 </div>
-@endforeach
-@endsection
 <div class="d-flex justify-content-center">
     {!!  $posts->links('pagination::bootstrap-4') !!}
 </div>
+@endsection
 @section('footer')
 <footer class="light blue">
     <div class="container px-4 px-lg-5">

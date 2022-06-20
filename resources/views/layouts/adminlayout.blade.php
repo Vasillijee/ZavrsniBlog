@@ -152,7 +152,7 @@
                      id="submenu-pages" aria-expanded="false">
                     <ul class="flex-column nav">
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="{{route('/')}}">
+                            <a class="nav-link" target="_blank" href="{{route('welkome.index')}}">
                                 <span class="sidebar-text">Home</span>
                             </a>
                         </li>
@@ -161,7 +161,7 @@
                                 <span class="sidebar-text">About</span>
                             </a>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="{{route('blog.index')}}">
+                            <a class="nav-link" target="_blank" href="{{route('blog')}}">
                                 <span class="sidebar-text">Blog</span>
                             </a>
                         </li>

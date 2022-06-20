@@ -1,6 +1,23 @@
-@extends('layouts.app')
-
-@section('content')
+@extends('layouts.layout')
+@section('header')
+     <!-- Page Header-->
+     <header class="masthead" style="background-image: url('{{asset('assets/img/register.jpg')}}')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>You can Regist Here!</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            <a href="#!"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+@endsection
+@section('main')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -74,4 +91,43 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('footer')
+    <!-- Footer-->
+    <footer class="light blue">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a target="_blank" href=https://twitter.com/KonatarVasilije>
+                                        <span class="fa-stack">
+                                            <i class="fas fa-square fa-stack-2x"></i>
+                                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://github.com/Vasillijee">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fas fa-square fa-stack-2x"></i>
+                                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/_v.konatar/">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-square fa-stack-2x"></i>
+                                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h6 class="text-center text-black-50"><small>Copyright &copy; Your Website 2022</small></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 @endsection

@@ -15,14 +15,13 @@ class BlogController extends Controller
     }
 
     public function index(){
-        $posts = Post::latest()->get();
+        $posts = Post::latest()->paginate(4);
         return view('userSide.blog' , compact('posts'));
     }
 
     public function create(){
-        return view('createblog');
+        return view('userSide.createblog');
     }
-
     public function store(Request $request){
         $request->validate([
 

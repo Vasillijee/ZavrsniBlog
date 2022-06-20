@@ -13,7 +13,7 @@
         <form action="{{route('blog.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <label for="title"><span>Title</span></label>
-        <input type="text" id="title" name="title" value="{{$post->title}}">
+        <input type="text" id="title" name="title" value=" {{$post->title}} ">
 
         @error('title')
             <p style="color: red; margin-bottom;25px">{{$message}}</p>
@@ -38,12 +38,9 @@
         
        @error('content')
        <p style="color: red; margin-bottom;25px">{{$message}}</p>
-   @enderror
-   
-        
-        
-        
-        
+   @enderror        
+
+   <button class="btn btn"></button>
         </form>
     </div>
 </section>
